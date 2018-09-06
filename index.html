@@ -1,32 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/app.css">
+  <title>Login sign-up form</title>
+</head>
 <body>
     <div class="container">
-      <div id="loginform" class="visible">
-        <div class="row">
-          <button id="signup" type="button" onclick="signUp();">Sign Up</button>
-          <button id="login" type="button" onclick="logIn();">Log In</button>
+        <div id="loginform" class="visible">
+          <div class="row">
+            <button id="signup" type="button" onclick="signUp();">Sign Up</button>
+            <button id="login" type="button" onclick="logIn();">Log In</button>
+          </div>
+          <h1>Welcome back</h1>
+          <form>
+            <input type="email" id="email" placeholder="Your e-mail address*" required/>
+            <input type="password" id="password" placeholder="Password*" required="required"/>
+            <a href="">Forgot Password?</a>
+            <button class="submit">LOG IN</button>
+          </form>
         </div>
-        <h1>Welcome back</h1>
-        <form>
-          <input type="email" id="email" placeholder="Your e-mail address*" required/>
-          <input type="password" id="password" placeholder="Password*" required="required"/>
-          <a href="">Forgot Password?</a>
-          <button class="submit">LOG IN</button>
-        </form>
-      </div>
-      
-      <div id="signupform" class="hidden">
-        <div class="row">
-          <button id="signup2" type="button" onclick="signUp();">Sign Up</button>
-          <button id="login2" type="button" onclick="logIn();">Log In</button>
+        
+        <div id="signupform" class="hidden">
+          <div class="row">
+            <button id="signup2" type="button" onclick="signUp();">Sign Up</button>
+            <button id="login2" type="button" onclick="logIn();">Log In</button>
+          </div>
+          <h1>Sign Up For Free</h1>
+          <form>
+            <input type="text" id="fname" placeholder="Firstname*"/>
+            <input type="text" id="lname" placeholder="Lastname*"/>
+            <input type="email" id="email" placeholder="Your e-mail address*" required/>
+            <input type="password" id="password" placeholder="Password*" required/>
+            <button class="submit">Get Started!</button>
+          </form>
         </div>
-        <h1>Sign Up For Free</h1>
-        <form>
-          <input type="text" id="fname" placeholder="Firstname*"/>
-          <input type="text" id="lname" placeholder="Lastname*"/>
-          <input type="email" id="email" placeholder="Your e-mail address*" required/>
-          <input type="password" id="password" placeholder="Password*" required/>
-          <button class="submit">Get Started!</button>
-        </form>
       </div>
-    </div>
-  </body>
+</body>
+</html>
+
